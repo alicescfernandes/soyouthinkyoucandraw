@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>So you think you can draw!</title>
 </head>
-<body>
+<body style="margin:0px;padding: 0px;overflow: hidden;">
 <canvas id="draw" width="800" height="800"></canvas>
 <script>
   var canvas = document.querySelector("#draw");
@@ -20,12 +20,12 @@
   ctx.lineJoin = "round"
   ctx.lineCap = "round"
   ctx.fillStyle = "#"+(Math.round(Math.random()*255)).toString(16)+(Math.round(Math.random()*255)).toString(16)+(Math.round(Math.random()*255)).toString(16)
-  ctx.font = "bolder italic 120px Open Sans";
+  ctx.font = "bolder italic 50px Open Sans";
   ctx.textAlign = "center";
   ctx.fillText("So you think you can draw!", canvas.width/2, canvas.height/2)
-    ctx.font = "italic 50px Open Sans";
+    ctx.font = "italic 25px Open Sans";
   ctx.textAlign = "center";
-  ctx.fillText("Tip: For a better experience, please turn up your volume!", canvas.width/2, canvas.height/2 + 120)
+  ctx.fillText("Tip: For a better experience, please turn up your volume!", canvas.width/2, canvas.height/2 + 50)
 
   function draw(e){
   	if(!isDrawing) return;
