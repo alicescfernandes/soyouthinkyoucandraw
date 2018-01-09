@@ -24,8 +24,8 @@
   ctx.textAlign = "center";
   ctx.fillText("So you think you can draw!", canvas.width/2, canvas.height/2)
     ctx.font = "italic 25px Open Sans";
-  ctx.textAlign = "center";
-  ctx.fillText("Tip: For a better experience, please turn up your volume!", canvas.width/2, canvas.height/2 + 50)
+  ctx.fillText("Click and drag to draw", canvas.width/2, canvas.height/2 + 50)
+  ctx.fillText("Tip: For a better experience, please turn up your volume!", canvas.width/2, canvas.height/2 + 100)
 
   function draw(e){
   	if(!isDrawing) return;
